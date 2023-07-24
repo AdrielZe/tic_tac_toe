@@ -173,12 +173,50 @@ text-decoration: none;
 
 @media screen and (max-width: 920px) {
   .main_menu div{
-    width: 20rem;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
+
+  .main_menu label{
+    font-size: 2rem;
+  }
+
+  .main_menu input{
+    max-width: 20rem;
+
+  }
+  
+  .boardSquare{
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+  }
+  
+
+
 }
 
 @media screen and (max-width: 610px) {
   .main_menu h1{
-    font-size: 4rem;
+    font-size: 3rem;  
   }
-}
+}   
+
+@media screen and (max-width: 430px) {
+
+  .main_menu div{
+    gap: 0.7rem;
+  }
+  .main_menu h1{
+    font-size: 3rem;  
+  }
+
+  .main_menu label{
+    width: 24.2rem;
+    font-size: 1.5rem;
+  }
+}   
