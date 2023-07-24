@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300&family=Ysabeau+SC:wght@1;100;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 6rem;
+}
+
+label{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+input{
+  font-size: 2rem;
+  background-color: #faebd7;
+}
+
+#currentPlayer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+
+}
+
+#playButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: #faebd7;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#playButton:hover{
+  background-color: #eed7ba;
+  transition: 0.4s;
+}
+
+#playButton:active{
+  background-color: #f0cea3;
+  transform: translateY(3px);
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+.main_menu{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.board_container{
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem 0;
+}
+
+.boardSquare{
+  font-size: 7rem;
+  width: 200px;
+  height: 150px;
+  background-color: transparent;
+  border: solid;
+  border-color: #f0cea3;
+  cursor: pointer;
+  place-content: center;
+
+}
+
+.boardSquare:active{
+text-decoration: none;
+}
+
+#winMessageLi{
+  display: flex;
+  justify-content: center;
+}
+
+.markLine{
+  color:greenyellow;
+}
+
+.winnerText{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+#space1{
+ border-width: 0px 10px 10px 0px;
+}
+
+#space2{
+  border-width: 0px 0px 10px 0px;
+}
+
+#space3{
+  border-width: 0px 0px 10px 10px;
+}
+
+#space4{
+  border-width: 0px 10px 10px 0px;
+}
+
+#space5{
+  border-width: 0px 0px 10px 0px;
+}
+
+#space6{
+  border-width: 0px 0px 10px 10px;
+}
+
+#space7{
+  border-width: 0px 10px 0px 0px;
+}
+
+#space8{
+  border-width: 0px 0px 0px 0px;
+}
+
+#space9{
+  border-width: 0px 0px 0px 10px;
+}
+
+.winnerLi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#restartButtonId{
+  width: 300px;
+  height: 50px;
+  background-color: #faebd7;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#restartButtonId:hover{
+  background-color: #eed7ba;
+  transition: 0.4s;
+}
+
+#restartButtonId:active{
+  background-color: #f0cea3;
+  transform: translateY(3px);
+}
+
+@media screen and (max-width: 920px) {
+  .main_menu div{
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .main_menu h1{
+    font-size: 4rem;
+  }
+}

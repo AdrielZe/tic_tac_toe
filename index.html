@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main_menu">
+     <h1>Jogo da velha</h1>
+     <div>
+        <label for="name1"> Nome do jogador que será o "X": </label>
+        <input type="text" id="name1" data-nome="name1" autocomplete="off">
+     </div>
+     <div>
+        <label for="name1"> Nome do jogador que será a "O": </label>
+        <input type="text" id="name2" data-nome="name2" autocomplete="off">
+     </div>
+     <button id="playButton" type="submit">Jogar!</button>  
+  </div>
+  
+  <div class="board_container">
+   <div class="currentPlayerLi">
+      <p id="currentPlayer"></p>
+   </div>
+   <div class="board">
+     <button class="boardSquare" id="space1" data-space=""></button> 
+     <button class="boardSquare" id="space2" data-space=""></button> 
+     <button class="boardSquare" id="space3" data-space=""></button> 
+     <button class="boardSquare" id="space4" data-space=""></button> 
+     <button class="boardSquare" id="space5" data-space=""></button> 
+     <button class="boardSquare" id="space6" data-space=""></button> 
+     <button class="boardSquare" id="space7" data-space=""></button> 
+     <button class="boardSquare" id="space8" data-space=""></button> 
+     <button class="boardSquare" id="space9" data-space=""></button> 
+   </div>  
+
+   <div class="winnerLi">
+     <p class="winnerText"></p>
+     <p class="restartButton"></p>
+   </div>
+
+   <div class="resetButtonLi">
+     <button class="resetButton"></button>
+   </div>
+
+   </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
